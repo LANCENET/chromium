@@ -497,7 +497,7 @@ bool PathProvider(int key, base::FilePath* result) {
            "/Library/Google/Chrome/NativeMessagingHosts"));
 #else
       cur = base::FilePath(FILE_PATH_LITERAL(
-          "/Library/Application Support/Chromium/NativeMessagingHosts"));
+          "/Library/Application Support/Decentr/NativeMessagingHosts"));
 #endif
 #else  // defined(OS_MAC)
 #if BUILDFLAG(GOOGLE_CHROME_BRANDING)
@@ -505,7 +505,7 @@ bool PathProvider(int key, base::FilePath* result) {
           "/etc/opt/chrome/native-messaging-hosts"));
 #else
       cur = base::FilePath(FILE_PATH_LITERAL(
-          "/etc/chromium/native-messaging-hosts"));
+          "/etc/Decentr/native-messaging-hosts"));
 #endif
 #endif  // !defined(OS_MAC)
       break;
