@@ -41,7 +41,7 @@ namespace {
 
 #if defined(OS_WIN)
 const wchar_t kDefaultRegistryPath[] =
-    L"SOFTWARE\\Google\\Endpoint Verification";
+    L"SOFTWARE\\Decentr\\Endpoint Verification";
 const wchar_t kValueName[] = L"Safe Storage";
 
 LONG ReadEncryptedSecret(std::string* encrypted_secret) {
@@ -253,9 +253,9 @@ base::FilePath GetEndpointVerificationDir() {
     return path;
 
 #if defined(OS_LINUX) || defined(OS_CHROMEOS)
-  path = path.AppendASCII("google");
+  path = path.AppendASCII("decentr");
 #else
-  path = path.AppendASCII("Google");
+  path = path.AppendASCII("Decentr");
 #endif
   path = path.AppendASCII("Endpoint Verification");
   return path;
