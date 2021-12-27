@@ -237,7 +237,7 @@
         <include name="IDR_CHARON_070" file="charon/charon/assets/i18n/technical/en.json" type="BINDATA" /> 
         <include name="IDR_CHARON_071" file="charon/charon/assets/fonts/Inter-Medium.woff2" type="BINDATA" /> 
         <include name="IDR_CHARON_072" file="charon/charon/assets/fonts/Inter-Medium.ttf" type="BINDATA" /> 
-        <include name="IDR_CHARON_043" file="charon/charon/assets/fonts/Inter-Regular.woff2" type="BINDATA" /> 
+        <include name="IDR_CHARON_073" file="charon/charon/assets/fonts/Inter-Regular.woff2" type="BINDATA" /> 
         <include name="IDR_CHARON_074" file="charon/charon/assets/fonts/Inter-Regular.woff" type="BINDATA" /> 
         <include name="IDR_CHARON_075" file="charon/charon/assets/fonts/MaterialIcons-Regular.woff2" type="BINDATA" /> 
         <include name="IDR_CHARON_076" file="charon/charon/assets/fonts/Inter-Bold.ttf" type="BINDATA" /> 
