@@ -23,7 +23,7 @@
     // When adding new engines, increment this number and use it as the new
     // max ID. This is used by UMA stats and must be updated to include the full
     // range or else not all engines will be counted in stats.
-    "kMaxPrepopulatedEngineID": 101,
+    "kMaxPrepopulatedEngineID": 102,
 
     // Increment this if you change the data in ways that mean users with
     // existing data should get a new version. Otherwise, existing data may
@@ -131,6 +131,26 @@
       "type": "SEARCH_ENGINE_GOOGLE",
       "preconnect_to_search_url" : "ALLOWED",
       "id": 1
+    },
+
+    "aol": {
+      "name": "AOL",
+      "keyword": "aol.com",
+      "favicon_url": "http://search.aol.com/favicon.ico",
+      "search_url": "http://search.aol.com/aol/search?query={searchTerms}",
+      "suggest_url": "http://autocomplete.search.aol.com/autocomplete/get?output=json&it=&q={searchTerms}",
+      "type": "SEARCH_ENGINE_AOL",
+      "id": 35
+    },
+
+    "ask": {
+      "name": "Ask",
+      "keyword": "ask.com",
+      "favicon_url": "http://sp.ask.com/sh/i/a16/favicon/favicon.ico",
+      "search_url": "http://www.ask.com/web?q={searchTerms}",
+      "suggest_url": "http://ss.ask.com/query?q={searchTerms}&li=ff",
+      "type": "SEARCH_ENGINE_ASK",
+      "id": 4
     },
 
     "mail_ru": {
@@ -879,6 +899,16 @@
       "type": "SEARCH_ENGINE_INFO_COM",
       "id": 97
     },
+
+    "internet_archive": {
+      "name": "InternetArchive",
+      "keyword": "web.archive.org",
+      "favicon_url": "https://web.archive.org/_static/images/archive.ico",
+      "search_url": "https://web.archive.org/web/*/{searchTerms}",
+      "type": "SEARCH_ENGINE_INTERNET_ARCHIVE",
+      "id": 87
+    },
+
 
     "libero": {
       "name": "Libero",
