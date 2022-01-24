@@ -3,7 +3,7 @@
   "name": "Charon",
   "description": "Charon Browser Extension",
   "author": "Decentr",
-  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+  "content_security_policy": "script-src 'self' 'wasm-eval' 'sha256-CA+WQBPlufcdIkUhUDOoZD+LI9nFG5pEQ8mVu8YjH3Q=' https://ssl.google-analytics.com https://beacon-v2.helpscout.net; object-src 'self'",
   "icons": {
     "16": "assets/icons/16.png",
     "32": "assets/icons/32.png",
@@ -30,10 +30,7 @@
     "management",
     "storage",
     "tabs",
-    "unlimitedStorage",
-    "<all_urls>",
-    "webRequest",
-    "webRequestBlocking"
+    "unlimitedStorage"
   ],
   "content_scripts": [
     {
@@ -56,5 +53,5 @@
   },
   "minimum_chrome_version": "58",
   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtkSEFjteWvhxiavWVoU6Mk3KDfPpJbBpQbVedqq0OMBzZBhMAek9pE1v++jL79v3GX/dhw9R2o5dpBHE6nl/Wp0GoGI+y2AVKdH3oToiZ37+/tBfeSbHoHQg7Arloje4p7073V3wQaOt+Rf3W8u860+trteWdupWl17uzqjytBWGDgsQUEGwsnDkwH8W5hRM7xXsuT34jveDCGnq67olHkTdXjyqWY3MWH6jJFtQQJ9BTvEbfYYsSnA76CjQUhs9DYIgJlWQnA7OQwEdVTKvCKpnqf5QM2IGxjGdMMfdVh66e/Ck06Sy8YiR15mH/pPNOZg143wBEcDNK2R83Htr1QIDAQAB",
-  "version": "3.8.0"
+  "version": "4.0.0"
 }
